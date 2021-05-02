@@ -1,0 +1,8 @@
+---
+# tasks file for demo-nginx
+- name: Install nginx
+  apt: pkg=nginx update_cache=true state=present
+  notify:
+    - start nginx
+- name: upload
+  copy: src=files/index.html dest=/var/www/html mode=0644

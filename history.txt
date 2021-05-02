@@ -1,0 +1,59 @@
+    1  vim ~/.bash_history 
+    2  sudo apt-add repository ppa:ansible/ansible
+    3  sudo apt-add-repository ppa:ansible/ansible
+    4  sudo apt-get update
+    5  sudo apt-get install ansible
+    6  ansible --version
+    7  mkdir ansible
+    8  cd ansible
+    9  vi first.yml
+   10  which apache2
+   11  which apache
+   12  ansible-playbook first.yml --connection=local
+   13  which apache2
+   14  which nginx
+   15  ls 
+   16  cd ..
+   17  ls
+   18  cd ansible
+   19  ls
+   20  cd Downloads
+   21  cd ..
+   22  cd Downloads
+   23  ls
+   24  cd ../Documents
+   25  ls
+   26  cd ..
+   27  cd home
+   28  cd Desktop
+   29  ls
+   30  mv index.html ../ansible
+   31  cd ../ansible
+   32  ls
+   33  rm -rf first.yml
+   34  sudo apt-purge apache2
+   35  sudo apt-get remove apache2
+   36  which apache2
+   37  sudo apt-get purge apache2
+   38  which apache2
+   39  sudo apt-get remove apache2
+   40  which apache2
+   41  sudo apt-get purge apache2
+   42  sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+   43  sudo apt-get update
+   44  sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+   45  which apache2
+   46  sudo rm -rf /etc/apache2
+   47  which apache2
+   48  sudo apt remove apache2
+   49  sudo apt autoremove
+   50  which apache2
+   51  ls
+   52  clear
+   53  ls
+   54  cd ansible/
+   55  ls
+   56  git -v
+   57  git --version
+   58  history 
+   59  history > history.txt
