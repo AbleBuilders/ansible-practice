@@ -1,0 +1,19 @@
+---
+# YAML documents begin with the document separator ---
+
+# The minus in YAML this indicates a list item.  The playbook contains a list
+# of plays, with each play being a dictionary
+#
+# Empty play, to ensure that facts are gathered and available when tags
+# are called, against individual plays (where a play tag exists)
+-
+
+  # Hosts: where our play will run and options it will run with
+  hosts: linux
+
+  # Handlers: the list of handlers that are executed as a notify key from a task
+  roles: 
+    - nginx
+    - webapp
+# Three dots indicate the end of a YAML document
+...

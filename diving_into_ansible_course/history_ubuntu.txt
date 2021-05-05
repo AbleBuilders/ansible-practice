@@ -1,0 +1,1000 @@
+  897  time ansible all -i inventory.py --list-hosts
+  898  jobs
+  899  kill %1 %2 %3
+  900  jobs
+  901  cd ..
+  902  ls
+  903  cd ..
+  904  ls
+  905  cd Register\ and\ When/
+  906  cd 01
+  907  ansible all -a "hostname -s" -o
+  908  ansible all -a "hostnames -s" -o
+  909  ansible all -a "hostname -s" 
+  910  cat register_playbook.yaml 
+  911  ansible-playbook register_playbook.yaml -o
+  912  ansible-playbook register_playbook.yaml \
+  913  cd ../02
+  914  cat register_playbook.yaml 
+  915  ansible-playbook register_playbook.yaml \
+  916  cd ../03
+  917  cat register_playbook.yaml 
+  918  ansible-playbook register_playbook.yaml 
+  919  cd ../04
+  920  ls
+  921  cat register_playbook.yaml 
+  922  ansible-playbook register_playbook.yaml 
+  923  cd ../05
+  924  ls
+  925  cat register_playbook.yaml 
+  926  ansible-playbook register_playbook.yaml 
+  927  ansible ubuntu1 -m setup -a "filter=ansible_distribution*"
+  928  cd ../04
+  929  ansible ubuntu1 -m setup -a "filter=ansible_distribution*"
+  930  ansible ubuntu1 -m setup -a "filter=ansible_distribution"
+  931  cd ../05
+  932  ls
+  933  cd ../06
+  934  ls
+  935  cat register_playbook.yaml 
+  936  ansible-playbook register_playbook.yaml 
+  937  ls
+  938  cd ../07
+  939  ansible-playbook register_playbook.yaml 
+  940  cat register_playbook.yaml 
+  941  cd ../08
+  942  ls
+  943  cat register_when_playbook.yaml 
+  944  ansible-playbook register_playbook.yaml 
+  945  ansible-playbook register_when_playbook.yaml 
+  946  cd ../10
+  947  ls
+  948  cat register_when_playbook.yaml 
+  949  ansible-playbook register_when_playbook.yaml 
+  950  cd ../11
+  951  ls
+  952  cat register_when_playbook.yaml 
+  953  ansible-playbook register_when_playbook.yaml 
+  954  cd ../12
+  955  cd ..
+  956  ls
+  957  cd ..
+  958  ls
+  959  cd Looping/
+  960  ls
+  961  cd 01
+  962  ls 
+  963  cat motd_playbook.yaml 
+  964  cd diveintoansible/Ansible\ Playbooks\,\ Deep\ Dive/Looping/
+  965  ls
+  966  cd 01
+  967  ls
+  968  cat motd_playbook.yaml 
+  969  ansible-playbook motd_playbook.yaml 
+  970  cd ../02
+  971  ls
+  972  cat motd_playbook.yaml 
+  973  ansible-playbook motd_playbook.yaml 
+  974  cat motd_playbook.yaml 
+  975  ansible-playbook motd_playbook.yaml 
+  976  cd ../03
+  977  ls
+  978  cat motd_playbook.yaml 
+  979  ansible-playbook motd_playbook.yaml 
+  980  cat ../04
+  981  cd ../03
+  982  cat motd_playbook.yaml 
+  983  ansible-playbook motd_playbook.yaml 
+  984  cd ../04
+  985  cat motd_playbook.yaml 
+  986  ansible-playbook motd_playbook.yaml 
+  987  cd ../05
+  988  cat motd_playbook.yaml 
+  989  ls
+  990  cat user_playbook.yaml 
+  991  ansible-playbook motd_playbook.yaml 
+  992  ansible-playbook user_playbook.yaml 
+  993  ssh /etc/passwd
+  994  ssh tail -5 /etc/passwd
+  995  ssh centos1 tail -5 /etc/passwd
+  996  ssh centos3 tail -5 /etc/passwd
+  997  ls
+  998  cd ../06
+  999  ls
+ 1000  cd ../05
+ 1001  ls
+ 1002  cat user_playbook.yaml 
+ 1003  ansible-playbook user_playbook.yaml 
+ 1004  cd ../05
+ 1005  cat user_playbook.yaml 
+ 1006  cd ../06
+ 1007  cat user_playbook.yaml 
+ 1008  ansible-playbook user_playbook.yaml 
+ 1009  cd ../07
+ 1010  ansible-playbook user_playbook.yaml 
+ 1011  cat user_playbook.yaml 
+ 1012  cd ../08
+ 1013  cat user_playbook.yaml 
+ 1014  ansible-playbook user_playbook.yaml 
+ 1015  cd ../09
+ 1016  cat user_playbook.yaml 
+ 1017  ansible-playbook user_playbook.yaml 
+ 1018  ssh centos3 tail -5 /etc/passwd
+ 1019  cd ../10
+ 1020  cat user_playbook.yaml 
+ 1021  ansible-playbook user_playbook.yaml 
+ 1022  ssh centos3 tail -5 /etc/passwd
+ 1023  ssh centos3 tail /etc/passwd
+ 1024  ssh root@centos3 /etc/shadow
+ 1025  ssh centos3 /etc/shadow
+ 1026  ssh root@centos3 tail -5 /etc/passwd
+ 1027  ssh root@centos3 /etc/passwd
+ 1028  ssh centos3 tail -5 /etc/shadow
+ 1029  ssh centos3 tail -5 /etc/passwd
+ 1030  ssh root@centos3 tail -5 /etc/passwd
+ 1031  ssh root@centos3 /etc/passwd
+ 1032  cat home/ansible/.ssh/known_hosts
+ 1033  cat /home/ansible/.ssh/known_hosts
+ 1034  ssh root@centos3
+ 1035  cd ../11
+ 1036  cat user_playbook.yaml 
+ 1037  ansible-playbook user_playbook.yaml 
+ 1038  ssh root@centos3 tail -5 /etc/shadow
+ 1039  cd ../12
+ 1040  cat user_playbook.yaml 
+ 1041  cat user_directories.yaml
+ 1042  ssh centos3 -l root ls -altr /home/james
+ 1043  ansible-playbook user_playbook.yaml 
+ 1044  ansible-playbook user_directories.yaml 
+ 1045  ssh root@centos3 tail -5 /etc/shadow
+ 1046  ssh centos3 -l root ls -altr /home/james
+ 1047  cat user_directories.yaml 
+ 1048  cd ../13
+ 1049  cat user_directories.yaml 
+ 1050  ansible-playbook user_directories.yaml 
+ 1051  ssh centos3 -l root ls -altr james
+ 1052  ssh centos3 -l root ls -altr /home/james
+ 1053  cd ../14
+ 1054  cat user_directories.yaml 
+ 1055  cat ssh_key_playbook.yaml 
+ 1056  ansible-playbook ssh_key_playbook.yaml 
+ 1057  ssh centos3 -l james
+ 1058  cd ../15
+ 1059  ls
+ 1060  cat ssh_key_playbook.yaml 
+ 1061  ssh-keygen -f custom_key
+ 1062  ansible-playbook ssh_key_playbook.yaml 
+ 1063  cd ../16
+ 1064  ls
+ 1065  cat directory_sequence.yaml 
+ 1066  cd ../15
+ 1067  ssh -i custom_key -l root -altrh /home/james
+ 1068  ssh centos3 -i custom_key -l root -altrh /home/james
+ 1069  ssh centos3 -i custom_key -l root -altrh /home/james/
+ 1070  ssh -i custom_key -l james 
+ 1071  ssh -i custom_key centos3 -l james 
+ 1072  ssh -i custom_key centos3 -l freya
+ 1073  ls
+ 1074  cd ../16
+ 1075  ls
+ 1076  cat directory_sequence.yaml 
+ 1077  ansible-playbook directory_sequence.yaml 
+ 1078  ssh centos3 -l root ls -altrh /home/james
+ 1079  cd ../17
+ 1080  ls
+ 1081  cat directory_sequence.yaml 
+ 1082  ansible-playbook directory_sequence.yaml 
+ 1083  ssh centos3 -l root ls -altrh /home/james
+ 1084  cd ../16
+ 1085  ssh centos3 -l root ls -altrh /home/james
+ 1086  cd ../17
+ 1087  ls
+ 1088  cat directory_sequence.yaml 
+ 1089  ansible-playbook directory_sequence.yaml 
+ 1090  cd ../18
+ 1091  ls
+ 1092  cat hex_directory_sequence_playbook.yaml 
+ 1093  ansible-playbook hex_directory_sequence_playbook.yaml 
+ 1094  cd ../19
+ 1095  ls
+ 1096  cat count_directory_sequence_playbook.yaml 
+ 1097  ansible-playbook count_directory_sequence_playbook.yaml 
+ 1098  cd ../20
+ 1099  cat count_directory_sequence_playbook.yaml 
+ 1100  cat random_choice_playbook.yaml 
+ 1101  ansible-playbook random_choice_playbook.yaml 
+ 1102  cd ../21
+ 1103  cat random_choice_playbook.yaml 
+ 1104  cat until_playbook.yaml 
+ 1105  ansible-playbook until_playbook.yaml 
+ 1106  cd ../22
+ 1107  ls
+ 1108  cat until_playbook.yaml 
+ 1109  cd ../
+ 1110  cd ..
+ 1111  ls
+ 1112  cd Asynchronous\,\ Serial\,\ Parallel/
+ 1113  ls
+ 1114  cd 01
+ 1115  ls
+ 1116  cat slow_playbook.yaml 
+ 1117  ansible-playbook slow_playbook.yaml 
+ 1118  cd 02
+ 1119  cd ../02
+ 1120  ls
+ 1121  cat slow_playbook.yaml 
+ 1122  ansible-playbook slow_playbook.yaml 
+ 1123  ls
+ 1124  cd ../023
+ 1125  cd ../03
+ 1126  ls
+ 1127  cat slow_playbook.yaml
+ 1128  ansible-playbook slow_playbook.yaml 
+ 1129  cd ../04
+ 1130  cat slow_playbook.yaml
+ 1131  ps -f | grep ssh
+ 1132  ansible-playbook slow_playbook.yaml 
+ 1133  ls
+ 1134  ps -f | grep ssh
+ 1135  cd ../05
+ 1136  ls
+ 1137  cat slow_playbook.yaml
+ 1138  ansible-playbook slow_playbook.yaml 
+ 1139  ps -f | grep ssh
+ 1140  cd ../06
+ 1141  ls
+ 1142  cat slow_playbook.yaml 
+ 1143  ansible-playbook slow_playbook.yaml 
+ 1144  ls
+ 1145  cd diveintoansible/Structuring\ Ansible\ Playbooks/
+ 1146  cd Using\ Tags/
+ 1147  ls
+ 1148  cd 01
+ 1149  cat host_vars/
+ 1150  cd host_vars/
+ 1151  ks
+ 1152  ls
+ 1153  cd ubuntu-c 
+ 1154  cat ubuntu-c 
+ 1155  cat centos1 
+ 1156  cd ..
+ 1157  ls
+ 1158  cat group_vars/
+ 1159  cat ansible.cfg 
+ 1160  cd ../02
+ 1161  cat nginx_playbook.yaml 
+ 1162  cd ../05
+ 1163  ls
+ 1164  for tag in import_playbook.yaml import_tasks.yaml include_tasks.yaml ; do echo "========= Testing ${tag} =================" ; ansible-playbook include_import_playbook.yaml --tags "${tag}" ; done
+ 1165  cat include_import_playbook.yaml 
+ 1166  ls
+ 1167  cd ..
+ 1168  cd ../
+ 1169  cd Using\ Roles/
+ 1170  ls
+ 1171  cd 01
+ 1172  s
+ 1173  ls
+ 1174  cat nginx_playbook.yaml 
+ 1175  ansible-galaxy init nginx
+ 1176  find nginx
+ 1177  ls
+ 1178  cd ../03
+ 1179  ansible-galaxy init nginx
+ 1180  ls
+ 1181  cd nginx
+ 1182  ls
+ 1183  cd ..
+ 1184  ls 
+ 1185  cd diveintoansible/Ansible\ Playbooks\,\ Deep\ Dive/
+ 1186  ls
+ 1187  cd ..
+ 1188  ls
+ 1189  cd Structuring\ Ansible\ Playbooks/
+ 1190  ls
+ 1191  cd Using\ Tags/02
+ 1192  ls
+ 1193  ansible-playbook nginx_playbook.yaml --tags "install-nginx"
+ 1194  nano nginx_playbook.yaml 
+ 1195  ansible-playbook nginx_playbook.yaml --tags "install-nginx"
+ 1196  ansible-playbook nginx_playbook.yaml --tags "web-app"
+ 1197  ansible-playbook nginx_playbook.yaml --tags "webapp"
+ 1198  cd ../04
+ 1199  ls
+ 1200  ansible-playbook nginx_playbook.yaml --tags "all"
+ 1201  cd ../..
+ 1202  cd Using\ Roles/
+ 1203  ls
+ 1204  cd 01
+ 1205  ls
+ 1206  cat nginx_playbook.yaml 
+ 1207  cd ..
+ 1208  ls
+ 1209  cd 03
+ 1210  ls
+ 1211  cat nginx_playbook.yaml 
+ 1212  ls
+ 1213  cd ../01
+ 1214  ls
+ 1215  cd nginx
+ 1216  cd ..
+ 1217  ls
+ 1218  cat nginx_playbook.yaml 
+ 1219  nano nginx/handlers/main.yml 
+ 1220  mv templates/* nginx/templates/
+ 1221  ls
+ 1222  mv files/* nginx/files/
+ 1223  ls
+ 1224  cd vars/
+ 1225  ls
+ 1226  cp logos.yaml ../nginx/vars/
+ 1227  cd ..
+ 1228  ls
+ 1229  cd nginx/vars/
+ 1230  ;s
+ 1231  ls
+ 1232  cat logos.yaml 
+ 1233  cat main.yml 
+ 1234  cat logos.yaml >> main.yml 
+ 1235  nano main.yml 
+ 1236  rm logos.yaml 
+ 1237  ls
+ 1238  cd ../..
+ 1239  ls
+ 1240  cd ..
+ 1241  ls
+ 1242  cd 01
+ 1243  ls
+ 1244  rm -rf files/
+ 1245  cd templates/
+ 1246  ls
+ 1247  cd ..
+ 1248  rm -rf templates/
+ 1249  ls
+ 1250  rm -rf vars/
+ 1251  ls
+ 1252  cat nginx_playbook.yaml 
+ 1253  nano ./nginx/tasks/main.yml 
+ 1254  nano nginx_playbook.yaml 
+ 1255  ls
+ 1256  nano nginx_playbook.yaml 
+ 1257  find  .
+ 1258  ansible-playbook nginx_playbook.yaml 
+ 1259  cd diveintoansible/
+ 1260  ls
+ 1261  cd Ansible\ Playbooks\,\ Deep\ Dive/
+ 1262  ls
+ 1263  cd Asynchronous\,\ Serial\,\ Parallel/
+ 1264  ls
+ 1265  cd 07
+ 1266  ls
+ 1267  ansible-playbook slow_playbook.yaml 
+ 1268  cat host
+ 1269  cat hosts
+ 1270  cd ../-8
+ 1271  cd ../08
+ 1272  ls
+ 1273  ansible-playbook slow_playbook.yaml 
+ 1274  diff slow_playbook.yaml ../07/slow_playbook.yaml 
+ 1275  cat slow_playbook.yaml 
+ 1276  ansible-playbook slow_playbook.yaml 
+ 1277  la
+ 1278  cd ../09
+ 1279  ls 
+ 1280  ansible-playbook slow_playbook.yaml 
+ 1281  ls
+ 1282  cat slow_playbook.yaml 
+ 1283  cd ../10
+ 1284  ls
+ 1285  cat slow_playbook.yaml 
+ 1286  cat ansible.cfg 
+ 1287  cd ../11
+ 1288  ls
+ 1289  cat serial_playbook.yaml 
+ 1290  ansible-playbook slow_playbook.yaml 
+ 1291  ansible-playbook serial_playbook.yaml 
+ 1292  cat serial_playbook.yaml 
+ 1293  cd ../11
+ 1294  cat serial_playbook.yaml 
+ 1295  cd ../12
+ 1296  cat serial_playbook.yaml 
+ 1297  time ansible-playbook serial_playbook.yaml 
+ 1298  cd ../13
+ 1299  ls
+ 1300  time ansible-playbook serial_playbook.yaml 
+ 1301  cd ../14
+ 1302  ls
+ 1303  cat random_slow_playbook.yaml 
+ 1304  time ansible-playbook serial_playbook.yaml 
+ 1305  time ansible-playbook random_slow_playbook.yaml 
+ 1306  ls
+ 1307  cd ../15
+ 1308  ls
+ 1309  cat random_slow_playbook.yaml 
+ 1310  time ansible-playbook random_slow_playbook.yaml 
+ 1311  l
+ 1312  cat random_slow_playbook.yaml 
+ 1313  cd ..
+ 1314  ls
+ 1315  cd ..
+ 1316  ls
+ 1317  cd Task\ Delegation/
+ 1318  ls
+ 1319  cd 01
+ 1320  ls 
+ 1321  cat tcpwrappers_ubuntu3_playbook.yaml 
+ 1322  cd ../02
+ 1323  ls
+ 1324  ansible-playbook tcpwrappers_ubuntu3_playbook.yaml 
+ 1325  cat tcpwrappers_ubuntu3_playbook.yaml 
+ 1326  ansible-playbook tcpwrappers_ubuntu3_playbook.yaml 
+ 1327  cd ../03
+ 1328  ls
+ 1329  cat tcpwrappers_ubuntu3_playbook.yaml 
+ 1330  ansible-playbook tcpwrappers_ubuntu3_playbook.yaml 
+ 1331  cd ../04
+ 1332  ls
+ 1333  cat tcpwrappers_ubuntu3_playbook.yaml 
+ 1334  ansible-playbook tcpwrappers_ubuntu3_playbook.yaml 
+ 1335  cd ../05
+ 1336  cat tcpwrappers_ubuntu3_playbook.yaml 
+ 1337  ansible-playbook tcpwrappers_ubuntu3_playbook.yaml 
+ 1338  ls
+ 1339  cd ,,
+ 1340  cd ..
+ 1341  ls
+ 1342  cd..
+ 1343  ls
+ 1344  cd..
+ 1345  ls
+ 1346  cd..
+ 1347  cd ..
+ 1348  ls
+ 1349  cd Magic\ Variables/
+ 1350  ls
+ 1351  cd 01
+ 1352  ls
+ 1353  cat dump_vars_playbook.yaml 
+ 1354  cat templates/dump_variables 
+ 1355  ls
+ 1356  cd templates/
+ 1357  ls
+ 1358  cat dump_variables 
+ 1359  cd ..
+ 1360  ls
+ 1361  cat host
+ 1362  cat hosts
+ 1363  cat dump_vars_playbook.yaml 
+ 1364  ansible-playbook dump_vars_playbook.yaml 
+ 1365  cd ..
+ 1366  ls
+ 1367  cd ..
+ 1368  ls
+ 1369  cd Blocks/
+ 1370  ls
+ 1371  cd 01
+ 1372  ls
+ 1373  cat blocks_playbook.yaml 
+ 1374  ansible-playbook blocks_playbook.yaml 
+ 1375  cd ..
+ 1376  cd 02
+ 1377  cat blocks_playbook.yaml 
+ 1378  ansible-playbook blocks_playbook.yaml 
+ 1379  cd ../02
+ 1380  cd ../03
+ 1381  cat blocks_playbook.yaml 
+ 1382  ansible-playbook blocks_playbook.yaml 
+ 1383  ls
+ 1384  cd ../..
+ 1385  cd Vault/
+ 1386  ls 
+ 1387  cat group_vars/
+ 1388  cd group_vars/
+ 1389  ls
+ 1390  cd ubuntu 
+ 1391  ls
+ 1392  ls ubuntu 
+ 1393  cat ubuntu 
+ 1394  cat centos 
+ 1395  cd ..
+ 1396  ls
+ 1397  ansible-vault encrypt_string --ask-vault-pass --name "ansible_become_pass" "password"
+ 1398  nano group_vars/ubuntu 
+ 1399  ansible ubuntu -m ping --ask-vault-pass 
+ 1400  cd ../02
+ 1401  ls
+ 1402  cat external_vault_vars.yaml 
+ 1403  ansible-vault encrypt external_vault_vars.yaml 
+ 1404  cd ../03
+ 1405  ls
+ 1406  ansible-playbook --ask-vault-pass vault_playbook.yaml 
+ 1407  cat vault_playbook.yaml 
+ 1408  cd ../03
+ 1409  cd ..
+ 1410  ls
+ 1411  cd 02
+ 1412  ls
+ 1413  cat external_vault_vars.yaml 
+ 1414  ansible-vault decrypt external_vault_vars.yaml 
+ 1415  cat external_vault_vars.yaml 
+ 1416  ansible-vault encrypt external_vault_vars.yaml 
+ 1417  ansible-vault rekey external_vault_vars.yaml 
+ 1418  ansible-vault view external_vault_vars.yaml 
+ 1419  echo vaultpass2 > password_file
+ 1420  ansible-vault view --vault-password-file password_file external_vault_vars.yaml 
+ 1421  ansible-vault view --vault-id @prompt external_vault_vars.yaml 
+ 1422  ansible-vault view --vault-id @password_file external_vault_vars.yaml 
+ 1423  ansible-vault decrypt external_vault_vars.yaml 
+ 1424  ansible-vault encrypt --vault-id vars@prompt external_vault_vars.yaml 
+ 1425  ansible-vault encrypt_string --vault-id ssh@prompt --name "ansible_become_pass" "password"
+ 1426  ansible-playbook --vault-id vars@prompt --vault-id ssh@prompt external_vault_vars.yaml 
+ 1427  ansible-playbook --vault-id vars@prompt --vault-id ssh@prompt vault_playbook.yaml 
+ 1428  nano group_vars/ubuntu 
+ 1429  ansible-playbook --vault-id vars@prompt --vault-id ssh@prompt vault_playbook.yaml 
+ 1430  history
+ 1431  ansible-playbook vault_playbook.yaml 
+ 1432  cat vault_playbook.yaml 
+ 1433  cat external_vault_vars.yaml 
+ 1434  ansible-vault encrypt --vault-id playbook@prompt vault_playbook.yaml 
+ 1435  cat vault_playbook.yaml 
+ 1436  ansible-playbook vault_playbook.yaml 
+ 1437  ansible-playbook --vault-id vars@prompt --vault-id ssh@prompt --vault-id playbook@prompt vault_playbook.yaml 
+ 1438  ls
+ 1439  cd -
+ 1440  cd ..
+ 1441  ls
+ 1442  cd ..
+ 1443  ls
+ 1444  cd Creating\ Modules\ and\ Plugins/
+ 1445  ls
+ 1446  cd ..
+ 1447  cd Ansible\ Playbooks\,\ Deep\ Dive/
+ 1448  ls
+ 1449  cd Playbook\ Modules/
+ 1450  ls
+ 1451  cd //
+ 1452  ls
+ 1453  cd 
+ 1454  cd diveintoansible/Ansible\ 
+ 1455  cd diveintoansible/
+ 1456  cd Structuring\ Ansible\ Playbooks/
+ 1457  ls
+ 1458  cd Using\ Tags/
+ 1459  cd ..
+ 1460  ls
+ 1461  cd Using\ Include\ and\ Import/
+ 1462  ls
+ 1463  cd +
+ 1464  cd -
+ 1465  cd =
+ 1466  cd -
+ 1467  cd 01
+ 1468  ls
+ 1469  cat play1_task2.yaml 
+ 1470  cat include_tasks_playbook.yaml 
+ 1471  ansible-playbook include_tasks_playbook.yaml 
+ 1472  cd ../02
+ 1473  ls
+ 1474  cat play1_task2.yaml 
+ 1475  cat import_tasks_playbook.yaml 
+ 1476  ansible-playbook import_tasks_playbook.yaml 
+ 1477  cd ../03
+ 1478  ls
+ 1479  cat include.yaml 
+ 1480  cat include_tasks.yaml 
+ 1481  cat include_import_tasks_playbook.yaml 
+ 1482  ansible-playbook include_import_tasks_playbook.yaml 
+ 1483  cd -
+ 1484  cd ../04
+ 1485  ls
+ 1486  cat import_playbook.yaml 
+ 1487  cat imported_playbook.yaml 
+ 1488  ansible-playbook import_playbook.yaml 
+ 1489  ansible-playbook imported_playbook.yaml 
+ 1490  ls
+ 1491  cd ../05
+ 1492  cd ..
+ 1493  ls
+ 1494  cd Using\ Tags/
+ 1495  ls
+ 1496  cd 01
+ 1497  ls
+ 1498  cat nginx_playbook.yaml 
+ 1499  ls templates/
+ 1500  ansible-playbook nginx_playbook.yaml --tags "install-epel"
+ 1501  ansible -i hosts -m ping
+ 1502  ls
+ 1503  cat host
+ 1504  cat hosts
+ 1505  history
+ 1506  history | grep "ping"
+ 1507  ansible all -i hosts -m ping
+ 1508  ansible-playbook nginx_playbook.yaml --tags "install-epel"
+ 1509  cat nginx_playbook.yaml 
+ 1510  cat vars/logos.yaml 
+ 1511  ansible-playbook nginx_playbook.yaml --tags "install-epel"
+ 1512  cat nginx_playbook.yaml 
+ 1513  ansible-playbook nginx_playbook.yaml --tags "install-epel"
+ 1514  cat nginx_playbook.yaml 
+ 1515  nano nginx_playbook.yaml 
+ 1516  ansible-playbook nginx_playbook.yaml --tags "install-epel"
+ 1517  nano nginx_playbook.yaml 
+ 1518  ansible-playbook nginx_playbook.yaml --tags "install-nginx"
+ 1519  nano nginx_playbook.yaml 
+ 1520  ansible-playbook nginx_playbook.yaml --tags "install-nginx"
+ 1521  ansible-playbook nginx_playbook.yaml --tags "deploy-app"
+ 1522  ansible-playbook nginx_playbook.yaml --tags "all"
+ 1523  ls
+ 1524  cd ../03
+ 1525  ls
+ 1526  cat nginx_playbook.yaml 
+ 1527  ansible-playbook nginx_playbook.yaml --tags "all"
+ 1528  ls
+ 1529  cd ../..
+ 1530  ls
+ 1531  cd Using\ Roles/
+ 1532  ls
+ 1533  cd 01
+ 1534  ls
+ 1535  ansible-playbook nginx
+ 1536  ansible-playbook nginx_playbook.yaml 
+ 1537  sudo dnf clean all
+ 1538  sudo dnf clean all
+ 1539  ls
+ 1540  cat hosts 
+ 1541  ansible centos -i hosts -c "sudo dnf clean all"
+ 1542  ansible centos -i hosts -c "dnf clean all"
+ 1543  cd ../03
+ 1544  ansible-playbook nginx_playbook.yaml 
+ 1545  nano nginx_playbook.yaml 
+ 1546  nano nginx/tasks/
+ 1547  nano nginx/tasks/main.yml 
+ 1548  ansible-playbook nginx_playbook.yaml 
+ 1549  nano nginx/tasks/main.yml 
+ 1550  ansible-playbook nginx_playbook.yaml 
+ 1551  nano nginx/tasks/main.yml 
+ 1552  ansible-playbook nginx_playbook.yaml 
+ 1553  nano nginx/tasks/main.yml 
+ 1554  ansible-playbook nginx_playbook.yaml 
+ 1555  nano nginx/tasks/main.yml 
+ 1556  ansible-playbook nginx_playbook.yaml 
+ 1557  nano nginx/tasks/main.yml 
+ 1558  ansible-playbook nginx_playbook.yaml 
+ 1559  nano hosts
+ 1560  ansible-playbook nginx_playbook.yaml 
+ 1561  ls
+ 1562  cd ../05
+ 1563  ls
+ 1564  cd webapp/
+ 1565  ls
+ 1566  cd ..
+ 1567  cd ../01
+ 1568  ls
+ 1569  ansible-galaxy init webapp
+ 1570  cp nginx/templates/* webapp/templates/
+ 1571  cp nginx/files/* webapp/files/
+ 1572  cp webapp/vars/main.yml 
+ 1573  cp webapp/vars/main.yml /tmp/
+ 1574  cp nginx/vars/main.yml webapp/vars/
+ 1575  cp /tmp/* nginx/vars/
+ 1576  cp /tmp/main.yml nginx/vars/
+ 1577  cat nginx/tasks/main.yml 
+ 1578  nano nginx/tasks/main.yml 
+ 1579  nano webapp/tasks/main.yml 
+ 1580  mv nginx_playbook.yaml nginx_webapp_playbook.yml
+ 1581  nano nginx_webapp_playbook.yml 
+ 1582  cat hosts
+ 1583  nano hosts
+ 1584  ansible-playbook nginx_webapp_playbook.yml 
+ 1585  cd ../07
+ 1586  ls
+ 1587  cat nginx_webapp_playbook.yaml 
+ 1588  ansible-playbook nginx_webapp_playbook.yml 
+ 1589  ansible-playbook nginx_webapp_playbook.yaml 
+ 1590  cat webapp/
+ 1591  cat webapp/meta/main.yml 
+ 1592  cd
+ 1593  cd diveintoansible/Using\ Ansible\ with\ Cloud\ Services\ and\ Containers/Docker\ with\ Ansible/01
+ 1594  ls
+ 1595  cat envdocker 
+ 1596  ping docker
+ 1597  bash +x install_docker.sh 
+ 1598  cat install_docker.sh 
+ 1599  sudo apt update
+ 1600  sudo cat /etc/apt/sources.list
+ 1601  sudo cat /etc/apt/sources.list | grep "natty"
+ 1602  sudo cat /etc/apt/sources.list | grep  natty
+ 1603  sudo cat /etc/apt/sources.list | grep ports
+ 1604  sudo apt-get clean
+ 1605  sudo apt-get update
+ 1606  sudo cat /etc/resolv.conf 
+ 1607  sudo apt install -y docker.io
+ 1608  ping google.com
+ 1609  ping 8.8.8.8
+ 1610  sudo nano /etc/resolv.conf 
+ 1611  sudo apt-get update
+ 1612  sudo apt update
+ 1613  bash +x install_docker.sh 
+ 1614  source envdocker 
+ 1615  docker images
+ 1616  docker ps -a
+ 1617  sudo nano /etc/resolv.conf 
+ 1618  docker ps -a
+ 1619  sudo apt update
+ 1620  sudo apt-get update
+ 1621  sudo apt install python3
+ 1622  sudo apt install flask
+ 1623  sudo apt install pandas
+ 1624  pip3 install pandas
+ 1625  sudo nano /etc/resolv.conf 
+ 1626  pip3 install pandas
+ 1627  docker ps -a
+ 1628  cat envdocker 
+ 1629  sudo /etc/apt/sources.list,d
+ 1630  sudo /etc/apt/sources.list.d
+ 1631  sudo /etc/apt/sources.list.d/
+ 1632  sudo cat /etc/apt/sources.list.d
+ 1633  sudo ls /etc/apt/sources.list.d
+ 1634  sudo ls /etc/apt/sources.list
+ 1635  sudo cat /etc/apt/sources.list
+ 1636  sudo ls /etc/apt/sources.list
+ 1637  sudo ls /etc/apt/sources.list.d/
+ 1638  sudo cd /etc/apt/sources.list.d/
+ 1639  sudo cd /etc/apt/sources.list.d
+ 1640  sudo cat /etc/apt/sources.list.d
+ 1641  sudo ls /etc/apt/sources.list.d
+ 1642  sudo cd /etc/apt/sources.list.d
+ 1643  ls
+ 1644  ~/diveintoansible//Using\ Ansible\ with\ Cloud\ Services\ and\ Containers/Docker\ with\ Ansible/
+ 1645  cd ~/diveintoansible//Using\ Ansible\ with\ Cloud\ Services\ and\ Containers/Docker\ with\ Ansible/
+ 1646  ls
+ 1647  cd 01
+ 1648  unset $DOCKER_HOST
+ 1649  nano envdocker 
+ 1650  source envdocker 
+ 1651  docker ps
+ 1652  unset DOCKER_HOST
+ 1653  docker ps
+ 1654  unset DOCKER_HOST
+ 1655  unset $DOCKER_HOST
+ 1656  docker ps
+ 1657  which docker_playbook.yaml 
+ 1658  which docker
+ 1659  which docker | DH
+ 1660  nano DH 
+ 1661  source DH
+ 1662  docker ps
+ 1663  unset $DOCKER_HOST
+ 1664  unset DOCKER_HOST
+ 1665  unset $DOCKER_HOST
+ 1666  source DH
+ 1667  unset DOCKER_HOST
+ 1668  unset $DOCKER_HOST
+ 1669  which docker
+ 1670  docker-machine start default
+ 1671  systemctl start docker
+ 1672  sudo systemctl start docker.service
+ 1673  service docker start
+ 1674  service start docker
+ 1675  service docker status
+ 1676  docker info
+ 1677  nano ~/.bashrc 
+ 1678  source envdocker 
+ 1679  ls
+ 1680  docker info
+ 1681  env | grep DOCKER_HOST
+ 1682  env
+ 1683  nano ~/bash_profile
+ 1684  unset $DOCKER_HOME
+ 1685  env
+ 1686  unset DOCKER_HOST
+ 1687  ls
+ 1688  env
+ 1689  source envdocker 
+ 1690  docker info
+ 1691  sudo systemctl daemon-reload
+ 1692  sudo systemctl restart docker.service
+ 1693  docker info
+ 1694  sudo apt remove docker
+ 1695  sudo apt remove docker-io
+ 1696  nano ~/bash_profile
+ 1697  which docker
+ 1698  nano ~/bash_profile
+ 1699  source ~/bash_profile 
+ 1700  echo $PATH
+ 1701  docker info
+ 1702  echo $DOCKER_HOST
+ 1703  unset DOCKER_HOST
+ 1704  unset $DOCKER_HOST
+ 1705  echo $DOCKER_HOST
+ 1706  source ~/bash_profile 
+ 1707  docker info
+ 1708  source envdocker
+ 1709  echo $DOCKER_HOST
+ 1710  cat envdocker 
+ 1711  nano envdocker 
+ 1712  source envdocker
+ 1713  echo $DOCKER_HOST
+ 1714  nano envdocker 
+ 1715  source envdocker
+ 1716  docker info
+ 1717  sudo systemctl daemon-reload
+ 1718  sudo systemctl restart docker
+ 1719  docker info
+ 1720  sudo nano /etc/resolv.conf 
+ 1721  apt get update
+ 1722  apt update
+ 1723  sudo apt update
+ 1724  docker info
+ 1725  sudo service docker restart
+ 1726  docker info
+ 1727  sudo nano /etc/docker/daemon.json
+ 1728  sudo service docker restart
+ 1729  docker info
+ 1730  sudo nano /etc/NetworkManager/NetworkManager.conf
+ 1731  sudo service network-manager restart
+ 1732  sudo service docker restart
+ 1733  docker info
+ 1734  cat /etc/default/docker
+ 1735  ifconfig docker0
+ 1736  systemd-resolve --status
+ 1737  man systemd-resolve 
+ 1738  systemd-resolve --status | grep 
+ 1739  systemd-resolve --status | grep "DNS"
+ 1740  systemd-resolve --status | grep "SERVER"
+ 1741  systemd-resolve --status | grep "Server"
+ 1742  sudo nano /etc/resolv.conf 
+ 1743  docker info
+ 1744  ping google.com
+ 1745  sudo apt-get update
+ 1746  docker info
+ 1747  sudo docker info
+ 1748  sudo docker ps
+ 1749  sudo docker images
+ 1750  docker info
+ 1751  sudo docker info
+ 1752  users
+ 1753  sudo usermod -aG docker ansible
+ 1754  docker info
+ 1755  sudo docker info
+ 1756  cd diveintoansible/Using\ Ansible\ with\ Cloud\ Services\ and\ Containers/
+ 1757  cd Docker\ with\ Ansible/
+ 1758  ls
+ 1759  cd 01
+ 1760  ansilbe-playbook docker_playbook.yaml 
+ 1761  ansible-playbook docker_playbook.yaml 
+ 1762  cat docker_playbook.yaml 
+ 1763  nano docker_playbook.yaml 
+ 1764  ansible-playbook docker_playbook.yaml 
+ 1765  ansible group_vars/docker 
+ 1766  cat group_vars/docker 
+ 1767  ansible-playbook docker_playbook.yaml --become-user
+ 1768  ansible-playbook docker_playbook.yaml --become-user --private-key ~/.ssh/id_rsa
+ 1769  cd ../05
+ 1770  ansible-playbook docker_playbook.yaml 
+ 1771  nano docker_playbook.yaml 
+ 1772  ansible-playbook docker_playbook.yaml 
+ 1773  cat hosts
+ 1774  git clone https://github.com/ansible/ansible.git
+ 1775  mv ansible ~
+ 1776  nano ~/ansible/hacking/test-module
+ 1777  ~/ansible/hacking/test-module -m ~/ansible/lib/ansible/modules/command.py hostname
+ 1778  ~/ansible/hacking/test-module -m ~/ansible/lib/ansible/modules/command.py h
+ 1779  ~/ansible/hacking/test-module -m ~/ansible/lib/ansible/modules/command.py -ahostname
+ 1780  ~/ansible/hacking/test-module -m ~/ansible/lib/ansible/modules/command.py -a hostname
+ 1781  cd ../01
+ 1782  ls
+ 1783  cd ../..
+ 1784  ls
+ 1785  cd ..
+ 1786  ls
+ 1787  cd Creating\ Modules\ and\ Plugins/
+ 1788  ls
+ 1789  cd Creating\ 
+ 1790  cd Creating\ Modules/
+ 1791  ls
+ 1792  cd 01
+ 1793  ls
+ 1794  cat icmp.sh 
+ 1795  ./icmp.sh 
+ 1796  cd ../02
+ 1797  ls
+ 1798  cat icmp.sh 
+ 1799  ./icmp.sh 
+ 1800  cd ../03
+ 1801  ls
+ 1802  cat icmp.sh 
+ 1803  ./icmp.sh 
+ 1804  ~/ansible/hacking/test-module -m icmp.sh 
+ 1805  cd ../04
+ 1806  ls
+ 1807  ~/ansible/hacking/test-module -m icmp.sh -a "target=centos1"
+ 1808  cat icmp.sh 
+ 1809  ~/ansible/hacking/test-module -m icmp.sh -a "target=centos4"
+ 1810  ~/ansible/hacking/test-module -m icmp.sh -a "target=ubuntu1"
+ 1811  cat /home/ansible/.ansible_test_module_arguments 
+ 1812  cat /home/ansible/.ansible_module_generated 
+ 1813  cat /home/ansible/.ansible_module_generated /home/ansible/.ansible_test_module_arguments 
+ 1814  /.ansible_module_generated /home/ansible/.ansible_test_module_arguments 
+ 1815  /home/ansible/.ansible_module_generated /home/ansible/.ansible_test_module_arguments 
+ 1816  cd ../05
+ 1817  ls
+ 1818  cat library/icmp 
+ 1819  ansible-playbook icmp_playbook.yaml 
+ 1820  ansible-playbook icmp_fail_playbook.yaml 
+ 1821  cd diveintoansible/Creating\ Modules\ and\ Plugins/Creating\ Modules/
+ 1822  ks
+ 1823  cd 05
+ 1824  ansible-playbook icmp_playbook.yaml 
+ 1825  ansible-playbook icmp_fail_playbook.yaml 
+ 1826  cd ../06
+ 1827  ls
+ 1828  cat icmp.py 
+ 1829  ls
+ 1830  ~/ansible/hacking/test-module -m icmp.py -a "target=127.0.0.0"
+ 1831  ~/ansible/hacking/test-module -m icmp.py -a "target=127.0.0.1"
+ 1832  cd ../07
+ 1833  ls 
+ 1834  ansible-doc -M library/icmp.py 
+ 1835  ansible-doc -M library icmp.py 
+ 1836  cd ../..
+ 1837  ls
+ 1838  cd Creating\ Plugins/
+ 1839  ;s
+ 1840  ls
+ 1841  cd 01
+ 1842  curl https://github.com/ansible/ansible/blob/devel/lib/ansible/plugins/lookup/items.py
+ 1843  sudo apt install curl
+ 1844  curl https://github.com/ansible/ansible/blob/devel/lib/ansible/plugins/lookup/items.py
+ 1845  mkdir lookup_plugins
+ 1846  cd lookup_plugins/
+ 1847  wget https://rawgithubusercontent.com/ansible/ansible/blob/devel/lib/ansible/plugins/lookup/items.py
+ 1848  wget https://raw.githubusercontent.com/ansible/ansible/blob/devel/lib/ansible/plugins/lookup/items.py
+ 1849  wget https://raw.githubusercontent.com/ansible/ansible/devel/lib/ansible/plugins/lookup/items.py
+ 1850  ls
+ 1851  mv items.py sorted_items.py
+ 1852  nano sorted_items.py 
+ 1853  cd ..
+ 1854  ls
+ 1855  cat sorted_items_playbook.yaml 
+ 1856  nano sorted_items_playbook.yaml 
+ 1857  ansible-playbook sorted_items_playbook.yaml 
+ 1858  cd ../02
+ 1859  ls
+ 1860  mkdir filter_plugins
+ 1861  cd filter_plugins/
+ 1862  ls
+ 1863  wget https://raw.githubusercontent.com/ansible/ansible/devel/lib/ansible/plugins/filter/core.py
+ 1864  ls
+ 1865  mv core.py reverse_upper.py
+ 1866  ls
+ 1867  nano reverse_upper.py 
+ 1868  nano -l reverse_upper.py 
+ 1869  python3
+ 1870  nano -l reverse_upper.py 
+ 1871  python3
+ 1872  cd 
+ 1873  ssh ubuntu1
+ 1874  ssh -v ubuntu1
+ 1875  ssh ubuntu1 -p 1234
+ 1876  ssh ubuntu1
+ 1877  cd diveintoansible/
+ 1878  ls
+ 1879  cd Ansible\ Playbooks\,\ Deep\ Dive/
+ 1880  l
+ 1881  cd Playbook\ Modules/01
+ 1882  ansible-playbook set_fact_playbook.yaml --step
+ 1883  ansible-playbook set_fact_playbook.yaml --spell-check
+ 1884  ansible-playbook set_fact_playbook.yaml --syntax-check
+ 1885  ansible-playbook set_fact_playbook.yaml --syntax-check --start-at-task="Install python-dnspython"
+ 1886  ansible-playbook set_fact_playbook.yaml --start-at-task="Install python-dnspython"
+ 1887  nano -l ansible.cfg 
+ 1888  ansible-playbook set_fact_playbook.yaml 
+ 1889  ls
+ 1890  cat logs.txt 
+ 1891  ansible-playbook set_fact_playbook.yaml 
+ 1892  cat logs.txt 
+ 1893  ansible-playbook set_fact_playbook.yaml -vvvv
+ 1894  cd
+ 1895  history | history_ubuntu.txt
+ 1896  history > history_ubuntu.txt

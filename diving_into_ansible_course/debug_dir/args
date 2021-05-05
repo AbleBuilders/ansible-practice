@@ -1,0 +1,1 @@
+{"ANSIBLE_MODULE_ARGS": {"_ansible_selinux_special_fs": ["fuse", "nfs", "vboxsf", "ramfs", "9p", "vfat"], "_ansible_tmpdir": "/home/ansible/.ansible/tmp/ansible-local-667rr29jynm", "_ansible_keep_remote_files": false, "_ansible_version": "2.10.7", "target": "127.0.0.1"}}
